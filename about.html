@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Responsive Navigation Menu Bar</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">Decision.io</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Decision.io</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="main">
+      <div id="text">
+        <h1>About Us</h1>
+      </div>
+      <div id="about-content">
+        <p>Welcome to decision.io, your ultimate destination for finding the perfect car tailored to your specific needs and preferences. <br>At Decision.io, we understand that purchasing a car is a significant decision, and <br>we are here to simplify the process for you.</p>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel_items">
+          <div class="carousel_item item1">
+            
+          </div>
+          <div class="carousel_item item2">
+            
+          </div>
+          <div class="carousel_item item3">
+            
+          </div>
+          <div class="carousel_item item4">
+            
+          </div>
+          <div class="carousel_item item5">
+            
+          </div>
+        </div>
+      </div>
+      <div id="mission">
+         <h1>Our Mission<br></h1>
+         <p><br>Our mission is to revolutionize the way individuals find their dream cars by providing a sophisticated yet user-friendly platform powered by advanced Multi-Criteria Decision Making (MCDM) algorithms. We aim to empower users with the tools and insights they need to make informed decisions and discover the ideal vehicle that matches their lifestyle, preferences, and budget.</p>
+      </div>
+      <div id="approach">
+        <h1><br>Our Approach</h1>
+        <p><br>At Decision.io, we leverage state-of-the-art MCDM techniques, including Analytic Hierarchy Process (AHP) and Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS), to streamline the car selection process. By integrating these powerful algorithms into our platform, we can objectively evaluate various cars based on multiple criteria such as price, fuel efficiency, safety features, performance, and more.</p>
+     </div>
+     <div id="working">
+        <h1><br>How It Works?</h1>
+        <p><br>Using our intuitive interface, users can input their specific requirements and preferences, such as budget constraints, desired features, fuel efficiency preferences, and more. Our algorithms then analyze this data and generate a personalized list of top car recommendations ranked according to their suitability.</p>
+     </div>
+     <div id="why_choose">
+     <h1>Why Choose Us?</h1>
+    </div>
+     <div id="why">
+        <div id="card1">
+            <h2>Expertise</h2>
+            <p>Our team consists of experts in the fields of data science, automotive technology, and user experience design, ensuring that you receive accurate recommendations tailored to your needs.</p>
+        </div>
+        <div id="card2">
+            <h2>Transperancy</h2>
+            <p>We believe in transparency throughout the car selection process. Our algorithms provide clear and understandable results, allowing you to see exactly how each car matches your criteria.</p>
+        </div>
+        <div id="card3">
+            <h2>Empowerment</h2>
+            <p> We empower you to make confident decisions by providing comprehensive information about each recommended car, including specifications, reviews, and pricing details.</p>
+        </div>
+        <div id="card4">
+            <h2>Continuous<br> Improvement</h2>
+            <p>We are committed to continually refining and enhancing our algorithms to ensure that you receive the most relevant and up-to-date recommendations possible.</p>
+        </div>   
+     </div>
+    </div>
+        <!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE=" crossorigin="anonymous"></script>
+<!-- custom js file link  -->
+    <script src="script.js"></script>
+
+</body>
+</html>
